@@ -1,0 +1,14 @@
+package com.example.cdi.chain;
+
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.inject.Inject;
+
+@RequestScoped
+public class ChainBean160 {
+
+    @Inject ChainBean161 dep1;
+    @Inject ChainBean168 dep2;
+    @Inject ChainBean178 dep3;
+
+    public String process() { return "ChainBean160"; }
+}
